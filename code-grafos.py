@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 G = nx.read_edgelist('/Users/admin/Desktop/trabGrafos/terrorists/terrorists.net')
 
-# Renomeação dos nós
+# Renomeação dos vértices
 
 mapping = {
     '0': "Mohamed Atta",
@@ -62,3 +62,4 @@ options = {
 
 nx.draw_networkx(G, **options)
 plt.show()
+print(nx.degree(G)) # Mostra grau dos vértices
